@@ -1,47 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <title>Categorías Anime - LiyedDesign</title>
-  <link rel="stylesheet" href="estilos/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Liyed Design - Anime</title>
   <style>
     body {
-      background-color: #000; 
-      color: white;
-      text-align: center;
-      font-family: 'Segoe UI', sans-serif;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
     }
-    .categoria {
-      margin: 20px auto;
-      padding: 20px;
-      width: 80%;
-      background-color: #111;
-      border: 1px solid #333;
+
+    .marca {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 50px 10%;
+      background-color: #f9f9f9;
+      gap: 30px;
+    }
+
+    .marca-texto {
+      flex: 1;
+    }
+
+    .marca-texto h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .marca-texto p {
+      font-size: 18px;
+      line-height: 1.6;
+    }
+
+    .marca-imagen {
+      flex: 1;
+    }
+
+    .marca-imagen img {
+      width: 100%;
       border-radius: 10px;
-      transition: 0.3s ease;
     }
-    .categoria:hover {
-      background-color: #222;
-      cursor: pointer;
+
+    .categorias {
+      padding: 50px 10%;
     }
-    a {
-      color: #ffd700;
-      text-decoration: none;
-      font-size: 1.2em;
+
+    .categorias h2 {
+      font-size: 30px;
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .producto {
+      border: 1px solid #ddd;
+      padding: 15px;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s ease;
+      background-color: #fff;
+    }
+
+    .producto:hover {
+      transform: scale(1.03);
+    }
+
+    .producto img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .producto h3 {
+      margin: 15px 0 10px;
+      font-size: 18px;
+    }
+
+    .producto p {
+      font-size: 16px;
+      color: #555;
     }
   </style>
 </head>
 <body>
 
-  <h1>Categorías Anime</h1>
+  <!-- SOBRE LA MARCA -->
+  <section class="marca">
+    <div class="marca-texto">
+      <h2>Sobre la marca</h2>
+      <p>
+        Liyed Design nació en diciembre de 2024 como una apuesta por crear prendas con alma: piezas que mezclan lo atemporal con lo actual, y que hablen por sí solas. Desde el primer boceto, nuestra misión ha sido diseñar ropa con intención, cuidando cada detalle para reflejar autenticidad, estilo y creatividad.<br><br>
+        Aunque estamos dando nuestros primeros pasos, creemos firmemente en el poder de la expresión personal a través de la moda. Cada colección busca conectar con personas que valoran lo único, lo bien hecho y lo que perdura más allá de las tendencias.
+      </p>
+    </div>
+    <div class="marca-imagen">
+      <img src="img/marca.jpg" alt="Imagen de la marca">
+    </div>
+  </section>
 
-  <div class="categoria">
-    <a href="camisetas-anime.html">Camisetas</a>
-  </div>
+  <!-- CATEGORÍAS -->
+  <section class="categorias">
+    <h2>Anime y manga</h2>
+    <div class="galeria">
+      <div class="producto">
+        <img src="img/buzo1.jpg" alt="Buzo anime 1">
+        <h3>Buzo Jujutsu Kaisen</h3>
+        <p>$85.000 COP</p>
+      </div>
+      <div class="producto">
+        <img src="img/buzo2.jpg" alt="Camisa anime 2">
+        <h3>Camisa Naruto</h3>
+        <p>$70.000 COP</p>
+      </div>
+      <!-- Deja espacio para más -->
+      <div class="producto">
+        <img src="img/proximamente.jpg" alt="Próximamente">
+        <h3>Próximamente</h3>
+        <p>$—</p>
+      </div>
+    </div>
+  </section>
 
-  <div class="categoria">
-    <a href="sudaderas-anime.html">Sudaderas</a>
-  </div>
+  <section class="categorias">
+    <h2>Caricaturas</h2>
+    <div class="galeria">
+      <div class="producto">
+        <img src="img/cartoon1.jpg" alt="Camisa caricatura">
+        <h3>Camisa Coraje</h3>
+        <p>$68.000 COP</p>
+      </div>
+      <div class="producto">
+        <img src="img/cartoon2.jpg" alt="Camisa caricatura">
+        <h3>Buzo Dexter</h3>
+        <p>$88.000 COP</p>
+      </div>
+      <div class="producto">
+        <img src="img/proximamente.jpg" alt="Próximamente">
+        <h3>Próximamente</h3>
+        <p>$—</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="categorias">
+    <h2>Clásico</h2>
+    <div class="galeria">
+      <div class="producto">
+        <img src="img/clasico1.jpg" alt="Camisa clásica">
+        <h3>Buzo Oversize Blanco</h3>
+        <p>$90.000 COP</p>
+      </div>
+      <div class="producto">
+        <img src="img/clasico2.jpg" alt="Camisa clásica">
+        <h3>Camisa Negra Básica</h3>
+        <p>$65.000 COP</p>
+      </div>
+      <div class="producto">
+        <img src="img/proximamente.jpg" alt="Próximamente">
+        <h3>Próximamente</h3>
+        <p>$—</p>
+      </div>
+    </div>
+  </section>
 
 </body>
 </html>
+
