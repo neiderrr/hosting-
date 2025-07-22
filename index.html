@@ -1,88 +1,56 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Liyed Design</title>
-  <link rel="stylesheet" href="estilos/estilo.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Liyed Design - Moda Contemporánea</title>
+    <meta name="description" content="Liyed Design - Diseños que inspiran creatividad y estilo." />
+    <link rel="stylesheet" href="estilo.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">Liyed Design</div>
+        <nav class="menu">
+          <a href="index.html">Inicio</a>
+          <a href="anime.html" target="_blank">Anime</a>
+          <a href="#">Sobre Nosotros</a>
+          <a href="#">Contacto</a>
+        </nav>
+      </div>
+    </header>
 
-  <!-- ⭐️ BANNER SUPERIOR -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">Liyed Design</div>
-      <nav class="menu">
-        <a href="index.html">Inicio</a>
-        <a href="#colecciones">Colecciones</a>
-        <a href="#">Tienda</a>
-        <a href="#">Contacto</a>
-      </nav>
-    </div>
-  </header>
-  
-  <!-- SOBRE LA MARCA -->
-  <section class="sobre-marca">
-    <div class="texto-marca">
-      <h2>Sobre la marca</h2>
-      <p>Liyed Design nació en diciembre de 2024 como una apuesta por crear prendas con alma: piezas que mezclan lo atemporal con lo actual, y que hablen por sí solas. Desde el primer boceto, nuestra misión ha sido diseñar ropa con intención, cuidando cada detalle para reflejar autenticidad, estilo y creatividad.</p>
-      <p>Aunque estamos dando nuestros primeros pasos, creemos firmemente en el poder de la expresión personal a través de la moda. Cada colección busca conectar con personas que valoran lo único, lo bien hecho y lo que perdura más allá de las tendencias.</p>
-    </div>
-    <div class="imagen-marca">
-      <img src="assets/img/sobre-la-marca.jpg" alt="Sobre la marca">
-    </div>
-  </section>
-  
-  <!-- ⭐️ SECCIÓN DE COLECCIONES -->
-  <section class="colecciones" id="colecciones">
-    <h2>Colecciones destacadas</h2>
-    <p class="descripcion">Explora nuestras categorías de camisetas personalizadas</p>
-    <div class="grid">
-      <!-- CATEGORÍAS -->
-      <div class="card">
-        <img src="assets/img/anime.jpg" alt="Anime & Manga">
-        <div class="contenido">
-          <h3>Anime & Manga</h3>
-          <a href="anime.html" class="boton">Ver más</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/cartoon.jpg" alt="Caricaturas & Clásicos">
-        <div class="contenido">
-          <h3>Caricaturas & Clásicos</h3>
-          <a href="caricaturas.html" class="boton">Ver más</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/peliculas.jpg" alt="Películas & Series">
-        <div class="contenido">
-          <h3>Películas & Series</h3>
-          <a href="peliculas.html" class="boton">Ver más</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/retro.jpg" alt="Pop & Retro">
-        <div class="contenido">
-          <h3>Cultura Pop & Retro</h3>
-          <a href="#" class="boton">Ver más</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/arte.jpg" alt="Arte & Creatividad">
-        <div class="contenido">
-          <h3>Arte & Creatividad</h3>
-          <a href="#" class="boton">Ver más</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/ciencia.jpg" alt="Ciencia & Espacio">
-        <div class="contenido">
-          <h3>Ciencia & Espacio</h3>
-          <a href="#" class="boton">Ver más</a>
-        </div>
-      </div>
-    </div>
-  </section>
+    <main class="colecciones">
+      <h2>Nuestras Colecciones</h2>
+      <p class="descripcion">Explora nuestras prendas únicas inspiradas en el arte, el anime y la autenticidad.</p>
 
-</body>
+      <section class="grid">
+        <div class="card">
+          <img src="img/anime1.jpg" alt="Camiseta Anime" />
+          <div class="contenido">
+            <h3>Colección Anime</h3>
+            <a href="anime.html" target="_blank" class="boton">Ver más</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/arte.jpg" alt="Camiseta Arte" />
+          <div class="contenido">
+            <h3>Colección Arte</h3>
+            <a href="#" class="boton">Ver más</a>
+          </div>
+        </div>
+
+        <div class="card">
+          <img src="img/frases.jpg" alt="Camiseta Frases" />
+          <div class="contenido">
+            <h3>Colección Frases</h3>
+            <a href="#" class="boton">Ver más</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
+
