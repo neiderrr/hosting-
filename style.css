@@ -1,4 +1,4 @@
-/* Reset básico */
+/* RESET BÁSICO */
 * {
   margin: 0;
   padding: 0;
@@ -6,122 +6,89 @@
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdfdfd;
-  color: #222;
-  line-height: 1.6;
-}
-
-/* Contenedor general */
-.container {
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1rem;
-}
-
-/* Título principal */
-h1, h2, h3 {
-  margin-bottom: 1rem;
-  font-weight: bold;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: white;
   color: #111;
+  line-height: 1.6;
+  padding: 20px;
 }
 
-/* --- SOBRE LA MARCA --- */
-.sobre-la-marca {
+/* SOBRE LA MARCA */
+.sobre-marca {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
-  margin-bottom: 3rem;
-  gap: 2rem;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
-.sobre-la-marca .texto {
-  flex: 1 1 300px;
+.sobre-marca-texto {
+  flex: 1;
+  min-width: 250px;
 }
 
-.sobre-la-marca .texto h2 {
+.sobre-marca-texto h2 {
   font-size: 2rem;
-  color: #000;
+  margin-bottom: 10px;
 }
 
-.sobre-la-marca .texto p {
+.sobre-marca-texto p {
   font-size: 1rem;
   color: #444;
 }
 
-.sobre-la-marca .imagen {
-  flex: 1 1 300px;
-  text-align: center;
+.sobre-marca-img {
+  flex: 1;
+  min-width: 250px;
+  max-width: 400px;
 }
 
-.sobre-la-marca .imagen img {
-  max-width: 100%;
+.sobre-marca-img img {
+  width: 100%;
   height: auto;
   border-radius: 10px;
 }
 
-/* --- CATEGORÍAS --- */
-.categorias {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
-  justify-content: center;
-  margin-bottom: 4rem;
+/* TÍTULOS DE CATEGORÍAS */
+h2.categoria-titulo {
+  font-size: 1.8rem;
+  margin: 40px 0 20px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
 }
 
-.categoria {
-  background-color: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-  overflow: hidden;
-  width: 280px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  text-align: center;
+/* PRODUCTOS */
+.productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 20px;
 }
 
-.categoria:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+.producto {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  transition: transform 0.2s ease;
 }
 
-.categoria img {
+.producto:hover {
+  transform: scale(1.02);
+}
+
+.producto img {
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
+  border-radius: 8px;
 }
 
-.categoria h3 {
-  font-size: 1.2rem;
-  padding: 1rem;
-  background-color: #f8f8f8;
-  color: #000;
+.producto h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
 }
 
-/* --- Footer básico --- */
-footer {
-  text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
-  color: #777;
-  border-top: 1px solid #ddd;
-  background-color: #fafafa;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .sobre-la-marca {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .sobre-la-marca .imagen, 
-  .sobre-la-marca .texto {
-    flex: 1 1 100%;
-  }
-
-  .categoria {
-    width: 100%;
-    max-width: 350px;
-  }
+.producto p {
+  color: #333;
+  font-weight: bold;
 }
