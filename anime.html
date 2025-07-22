@@ -1,41 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Anime & Manga - Liyed Design</title>
-  <link rel="stylesheet" href="estilos/estilo.css" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Colección Anime - Liyed Design</title>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="logo">Liyed Design</div>
+        <nav class="menu">
+          <a href="index.html">Inicio</a>
+          <a href="anime.html">Anime</a>
+          <a href="#">Sobre Nosotros</a>
+          <a href="#">Contacto</a>
+        </nav>
+      </div>
+    </header>
 
-  <!-- Header idéntico -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">Liyed Design</div>
-      <nav class="menu">
-        <a href="index.html">Inicio</a>
-        <a href="#colecciones">Colecciones</a>
-      </nav>
-    </div>
-  </header>
+    <main class="colecciones">
+      <h2>Colección Anime</h2>
+      <p class="descripcion">Camisetas inspiradas en tus animes favoritos, llenas de color y estilo otaku.</p>
 
-  <!-- Título categoría -->
-  <h1 style="text-align:center; margin:2rem 0;">Camisetas y Buzos - Anime & Manga</h1>
+      <section class="grid">
+        <div class="card">
+          <img src="img/gojo.jpg" alt="Gojo" />
+          <div class="contenido">
+            <h3>Gojo</h3>
+            <a href="#" class="boton">Comprar</a>
+          </div>
+        </div>
 
-  <!-- Productos -->
-  <section class="productos">
-    <div class="producto">
-      <img src="assets/img/imagen1.jpg" alt="Camisa Anime 1">
-      <h3>Camisa Naruto Oversize</h3>
-      <p>$55.000 COP</p>
-    </div>
-    <div class="producto">
-      <img src="assets/img/imagen2.jpg" alt="Buzo Anime 1">
-      <h3>Buzo Ghibli Unisex</h3>
-      <p>$85.000 COP</p>
-    </div>
-    <!-- Repite bloques según necesites -->
-  </section>
+        <div class="card">
+          <img src="img/bleach.jpg" alt="Bleach" />
+          <div class="contenido">
+            <h3>Bleach</h3>
+            <a href="#" class="boton">Comprar</a>
+          </div>
+        </div>
 
-</body>
+        <div class="card">
+          <img src="img/naruto.jpg" alt="Naruto" />
+          <div class="contenido">
+            <h3>Naruto</h3>
+            <a href="#" class="boton">Comprar</a>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
