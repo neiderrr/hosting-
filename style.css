@@ -1,29 +1,15 @@
 body {
   margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: #ffffff;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #fff;
   color: #222;
 }
 
 header {
-  background-color: #111;
-  color: white;
-  padding: 20px;
+  background-color: #fff;
   text-align: center;
-}
-
-nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 40px;
-}
-
-nav ul li a {
-  text-decoration: none;
-  color: white;
+  padding: 1.5rem;
+  font-size: 2rem;
   font-weight: bold;
 }
 
@@ -31,57 +17,61 @@ nav ul li a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  padding: 40px;
-  gap: 40px;
+  padding: 2rem;
+  gap: 2rem;
 }
 
-.sobre-marca .texto {
-  flex: 1 1 400px;
+.texto-marca {
+  flex: 1;
+  min-width: 300px;
   max-width: 600px;
 }
 
-.sobre-marca .imagen img {
-  width: 350px;
+.imagen-marca {
+  flex: 1;
+  min-width: 300px;
+  max-width: 400px;
+}
+
+.imagen-marca img {
+  width: 100%;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.categorias {
+  padding: 2rem;
+  text-align: center;
+}
+
+.grid-categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.categoria {
+  text-decoration: none;
+  color: #000;
+  border: 1px solid #ccc;
+  padding: 1rem;
   border-radius: 12px;
-}
-
-.titulo-categoria {
-  text-align: center;
-  margin-top: 40px;
-  font-size: 28px;
-}
-
-.productos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  padding: 40px;
-}
-
-.producto {
-  border: 1px solid #ddd;
-  border-radius: 10px;
-  padding: 20px;
-  width: 250px;
-  text-align: center;
   transition: transform 0.2s;
 }
 
-.producto img {
+.categoria:hover {
+  transform: scale(1.05);
+}
+
+.categoria img {
   width: 100%;
-  height: auto;
-  border-radius: 10px;
+  border-radius: 8px;
+  height: 150px;
+  object-fit: cover;
 }
 
-.producto:hover {
-  transform: scale(1.03);
-}
-
-.precio {
-  color: #1a1a1a;
-  font-weight: bold;
-  margin-top: 10px;
+.categoria h3 {
+  margin-top: 0.5rem;
 }
 
