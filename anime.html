@@ -1,60 +1,55 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Anime & Manga - Liyed Design</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <title>Categorías Anime - LiyedDesign</title>
+  <link rel="stylesheet" href="estilos/styles.css">
+  <style>
+    body {
+      background-color: #000; 
+      color: white;
+      text-align: center;
+      font-family: 'Segoe UI', sans-serif;
+    }
+    .categoria {
+      margin: 20px auto;
+      padding: 20px;
+      width: 80%;
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 10px;
+      transition: 0.3s ease;
+    }
+    .categoria:hover {
+      background-color: #222;
+      cursor: pointer;
+    }
+    a {
+      color: #ffd700;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
+  </style>
 </head>
 <body>
 
-  <!-- ⭐️ BANNER SUPERIOR -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">Liyed Design</div>
-      <nav class="menu">
-        <a href="index.html">Inicio</a>
-        <a href="anime.html">Anime & Manga</a>
-        <a href="#">Tienda</a>
-        <a href="#">Contacto</a>
-      </nav>
-    </div>
-  </header>
+  <h1>Categorías Anime</h1>
 
-  <!-- ⭐️ SECCIÓN DE ANIME & MANGA -->
-  <section class="colecciones">
-    <h2>Anime & Manga</h2>
-    <p class="descripcion">Camisetas inspiradas en tus animes y mangas favoritos</p>
+  <div class="categoria">
+    <a href="camisetas-anime.html">Camisetas</a>
+  </div>
 
-    <div class="grid">
-      <!-- Producto 1 -->
-      <div class="card">
-        <img src="https://i.pinimg.com/736x/8e/1d/82/8e1d82674a063915853c8e544aebd373.jpg" alt="Camisa Anime 1">
-        <div class="contenido">
-          <h3>Camisa Anime 1</h3>
-          <a href="#" class="boton">Comprar</a>
-        </div>
-      </div>
-      <!-- Producto 2 -->
-      <div class="card">
-        <img src="https://i.pinimg.com/736x/eb/44/7c/eb447ccb00c3919b297d8f534a76665e.jpg" alt="Camisa Anime 2">
-        <div class="contenido">
-          <h3>Camisa Anime 2</h3>
-          <a href="#" class="boton">Comprar</a>
-        </div>
-      </div>
-      <!-- Producto 3 -->
-      <div class="card">
-        <img src="https://i.pinimg.com/736x/0a/73/b1/0a73b172bbc8734e6b0488f2e505c7dc.jpg" alt="Camisa Anime 3">
-        <div class="contenido">
-          <h3>Camisa Anime 3</h3>
-          <a href="#" class="boton">Comprar</a>
-        </div>
-      </div>
-      <!-- Puedes agregar más productos repitiendo la estructura -->
-    </div>
-  </section>
+  <div class="categoria">
+    <a href="gorras-anime.html">Gorras</a>
+  </div>
+
+  <div class="categoria">
+    <a href="sudaderas-anime.html">Sudaderas</a>
+  </div>
+
+  <div class="categoria">
+    <a href="stickers-anime.html">Stickers</a>
+  </div>
 
 </body>
 </html>
