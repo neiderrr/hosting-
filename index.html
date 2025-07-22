@@ -1,23 +1,14 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Liyed Design</title>
-  <link rel="stylesheet" href="assets/css/estilo.css" />
+  <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-
-  <!-- ⭐️ BANNER SUPERIOR -->
-  <header class="header">
-    <div class="container">
-      <div class="logo">Liyed Design</div>
-      <nav class="menu">
-        <a href="index.html">Inicio</a>
-        <a href="#colecciones">Colecciones</a>
-        <a href="#tienda">Tienda</a>
-        <a href="#contacto">Contacto</a>
-      </nav>
-    </div>
+  <header>
+    <h1>Liyed Design</h1>
   </header>
 
   <!-- SOBRE LA MARCA -->
@@ -28,60 +19,35 @@
       <p>Aunque estamos dando nuestros primeros pasos, creemos firmemente en el poder de la expresión personal a través de la moda. Cada colección busca conectar con personas que valoran lo único, lo bien hecho y lo que perdura más allá de las tendencias.</p>
     </div>
     <div class="imagen-marca">
-      <img src="assets/img/sobre-la-marca.jpg" alt="Sobre la marca">
+      <img src="assets/marca/sobre-la-marca.jpg" alt="Sobre la marca">
     </div>
   </section>
 
-  <!-- ⭐️ SECCIÓN DE COLECCIONES -->
-  <section class="colecciones" id="colecciones">
-    <h2>Colecciones destacadas</h2>
-    <p class="descripcion">Explora nuestras categorías de camisetas personalizadas</p>
-
-    <div class="grid">
-      <div class="card">
-        <img src="assets/img/anime.jpg" alt="Anime & Manga">
-        <div class="contenido">
-          <h3>Anime & Manga</h3>
-          <a href="anime.html" class="boton">Ver más</a>
-        </div>
+  <!-- CATEGORÍAS -->
+  <section class="categorias">
+    <h2>Categorías destacadas</h2>
+    <div class="contenedor-categorias">
+      <div class="categoria">
+        <img src="assets/categorias/anime.jpg" alt="Anime y Manga">
+        <h3>Anime y Manga</h3>
+        <a href="anime/index.html">Ver más</a>
       </div>
-      <div class="card">
-        <img src="assets/img/cartoon.jpg" alt="Caricaturas & Clásicos">
-        <div class="contenido">
-          <h3>Caricaturas & Clásicos</h3>
-          <a href="#" class="boton">Ver más</a>
-        </div>
+      <div class="categoria">
+        <img src="assets/categorias/caricaturas.jpg" alt="Caricaturas">
+        <h3>Caricaturas</h3>
+        <a href="#">Ver más</a>
       </div>
-      <div class="card">
-        <img src="assets/img/peliculas.jpg" alt="Películas & Series">
-        <div class="contenido">
-          <h3>Películas & Series</h3>
-          <a href="#" class="boton">Ver más</a>
-        </div>
+      <div class="categoria">
+        <img src="assets/categorias/clasicos.jpg" alt="Clásicos">
+        <h3>Clásicos</h3>
+        <a href="#">Ver más</a>
       </div>
-      <div class="card">
-        <img src="assets/img/retro.jpg" alt="Pop & Retro">
-        <div class="contenido">
-          <h3>Cultura Pop & Retro</h3>
-          <a href="#" class="boton">Ver más</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/arte.jpg" alt="Arte & Creatividad">
-        <div class="contenido">
-          <h3>Arte & Creatividad</h3>
-          <a href="#" class="boton">Ver más</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="assets/img/ciencia.jpg" alt="Ciencia & Espacio">
-        <div class="contenido">
-          <h3>Ciencia & Espacio</h3>
-          <a href="#" class="boton">Ver más</a>
-        </div>
+      <div class="categoria">
+        <img src="assets/categorias/peliculas.jpg" alt="Películas">
+        <h3>Películas</h3>
+        <a href="#">Ver más</a>
       </div>
     </div>
   </section>
-
 </body>
-</html> 
+</html>
