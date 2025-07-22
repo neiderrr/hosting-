@@ -2,41 +2,40 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Anime & Manga - Liyed Design</title>
-  <link rel="stylesheet" href="estilos.css" />
+  <link rel="stylesheet" href="estilos/estilo.css" />
 </head>
 <body>
-  <header>
-    <h1>Anime & Manga</h1>
-    <p>Expresa tu pasión por el anime con estilo</p>
+
+  <!-- Header idéntico -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">Liyed Design</div>
+      <nav class="menu">
+        <a href="index.html">Inicio</a>
+        <a href="#colecciones">Colecciones</a>
+      </nav>
+    </div>
   </header>
 
-  <section class="colecciones">
-    <h2>Nuestras Camisetas</h2>
-    <p class="descripcion">Diseños inspirados en tus series y personajes favoritos</p>
+  <!-- Título categoría -->
+  <h1 style="text-align:center; margin:2rem 0;">Camisetas y Buzos - Anime & Manga</h1>
 
-    <div class="grid">
-      <div class="card">
-        <img src="https://i.pinimg.com/564x/f3/67/8d/f3678d336d626bbd5dc74700db7dc963.jpg" alt="Gojo Satoru">
-        <div class="contenido">
-          <h3>Gojo Satoru</h3>
-          <a href="#" class="boton">Comprar</a>
-        </div>
-      </div>
-      <div class="card">
-        <img src="https://i.pinimg.com/564x/92/49/5b/92495b264924b929ad2e28a47a1bb931.jpg" alt="Itachi Uchiha">
-        <div class="contenido">
-          <h3>Itachi Uchiha</h3>
-          <a href="#" class="boton">Comprar</a>
-        </div>
-      </div>
-      <!-- Agrega más camisetas aquí -->
+  <!-- Productos -->
+  <section class="productos">
+    <div class="producto">
+      <img src="assets/img/imagen1.jpg" alt="Camisa Anime 1">
+      <h3>Camisa Naruto Oversize</h3>
+      <p>$55.000 COP</p>
     </div>
+    <div class="producto">
+      <img src="assets/img/imagen2.jpg" alt="Buzo Anime 1">
+      <h3>Buzo Ghibli Unisex</h3>
+      <p>$85.000 COP</p>
+    </div>
+    <!-- Repite bloques según necesites -->
   </section>
 
-  <footer>
-    <p>&copy; 2025 Liyed Design. Todos los derechos reservados.</p>
-  </footer>
 </body>
 </html>
