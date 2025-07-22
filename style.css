@@ -1,77 +1,127 @@
-body {
+/* Reset básico */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #fff;
+  background-color: #fdfdfd;
   color: #222;
+  line-height: 1.6;
 }
 
-header {
-  background-color: #fff;
-  text-align: center;
-  padding: 1.5rem;
-  font-size: 2rem;
+/* Contenedor general */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+/* Título principal */
+h1, h2, h3 {
+  margin-bottom: 1rem;
   font-weight: bold;
+  color: #111;
 }
 
-.sobre-marca {
+/* --- SOBRE LA MARCA --- */
+.sobre-la-marca {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  padding: 2rem;
+  align-items: center;
+  margin-bottom: 3rem;
   gap: 2rem;
 }
 
-.texto-marca {
-  flex: 1;
-  min-width: 300px;
-  max-width: 600px;
+.sobre-la-marca .texto {
+  flex: 1 1 300px;
 }
 
-.imagen-marca {
-  flex: 1;
-  min-width: 300px;
-  max-width: 400px;
+.sobre-la-marca .texto h2 {
+  font-size: 2rem;
+  color: #000;
 }
 
-.imagen-marca img {
-  width: 100%;
-  border-radius: 15px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+.sobre-la-marca .texto p {
+  font-size: 1rem;
+  color: #444;
 }
 
-.categorias {
-  padding: 2rem;
+.sobre-la-marca .imagen {
+  flex: 1 1 300px;
   text-align: center;
 }
 
-.grid-categorias {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-  gap: 1.5rem;
-  margin-top: 1rem;
+.sobre-la-marca .imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* --- CATEGORÍAS --- */
+.categorias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin-bottom: 4rem;
 }
 
 .categoria {
-  text-decoration: none;
-  color: #000;
-  border: 1px solid #ccc;
-  padding: 1rem;
+  background-color: #fff;
   border-radius: 12px;
-  transition: transform 0.2s;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  width: 280px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
 }
 
 .categoria:hover {
-  transform: scale(1.05);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .categoria img {
   width: 100%;
-  border-radius: 8px;
-  height: 150px;
+  height: 200px;
   object-fit: cover;
 }
 
 .categoria h3 {
-  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  padding: 1rem;
+  background-color: #f8f8f8;
+  color: #000;
 }
 
+/* --- Footer básico --- */
+footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+  color: #777;
+  border-top: 1px solid #ddd;
+  background-color: #fafafa;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sobre-la-marca {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .sobre-la-marca .imagen, 
+  .sobre-la-marca .texto {
+    flex: 1 1 100%;
+  }
+
+  .categoria {
+    width: 100%;
+    max-width: 350px;
+  }
+}
