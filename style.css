@@ -1,102 +1,89 @@
-/* estilos.css */
-
+/* Fuente general */
 body {
   margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fdfaf6;
-  color: #333;
+  font-family: 'Raleway', sans-serif;
+  background-color: #f7f7f7;
+  color: #222;
 }
 
+/* Header */
 header {
-  background-color: #111;
-  color: #fff;
-  padding: 20px;
-  text-align: center;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
-nav ul {
+.logo {
+  height: 50px;
+}
+
+nav .menu {
   list-style: none;
+  display: flex;
+  gap: 2rem;
+  margin: 0;
   padding: 0;
-  margin-top: 10px;
+}
+
+nav .menu li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 700;
+  transition: color 0.3s;
+}
+
+nav .menu li a:hover {
+  color: #6c63ff;
+}
+
+/* Hero */
+.hero {
+  background-image: url("img/fondo.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 5rem 2rem;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.6);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.5rem;
+}
+
+/* Galería */
+.galeria {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 2rem;
+  padding: 2rem;
+  flex-wrap: wrap;
 }
 
-nav a {
-  color: #f7d98b;
-  text-decoration: none;
-  font-weight: bold;
+.galeria img {
+  width: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
 }
 
-nav a:hover {
-  color: #fffacd;
+.galeria img:hover {
+  transform: scale(1.05);
 }
 
-/* Sección de Colecciones */
-.colecciones {
-  padding: 40px 20px;
+/* Footer */
+footer {
+  background-color: #ffffff;
   text-align: center;
-}
-
-.colecciones h2 {
-  font-size: 2em;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.descripcion {
-  margin-bottom: 40px;
-  font-size: 1.1em;
-  color: #555;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 25px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: scale(1.03);
-}
-
-.card img {
-  width: 100%;
-  height: 250px;
-  object-fit: cover;
-}
-
-.card .contenido {
-  padding: 15px;
-}
-
-.card h3 {
-  font-size: 1.3em;
-  margin-bottom: 10px;
-  color: #222;
-}
-
-.boton {
-  display: inline-block;
-  background-color: #222;
-  color: #fdfaf6;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 20px;
-  transition: background 0.3s ease;
-}
-
-.boton:hover {
-  background-color: #444;
+  padding: 1rem;
+  border-top: 1px solid #ddd;
+  font-size: 0.9rem;
 }
