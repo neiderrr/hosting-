@@ -61,7 +61,7 @@
       .nav-links a{ font-family: Montserrat, sans-serif; font-weight:600; white-space: nowrap; padding:.25rem 0; position:relative; }
       .nav-links a::after{ content:""; position:absolute; left:0; bottom:-4px; height:2px; width:0; background:var(--liyed-red); transition: width .2s ease; }
       .nav-links a:hover::after{ width:100%; }
-
+      
       /* Theme Toggle */
       .theme-toggle{ background:none; border:1px solid #ddd; padding:.5rem; cursor:pointer; border-radius:4px; margin-left:1rem; }
       [data-theme="dark"] .theme-toggle{ border-color:#444; color:#fff; }
@@ -126,12 +126,12 @@
       .cart-btn:hover{ background:var(--liyed-red); color:#fff; }
       .price{ color: var(--liyed-red); font-weight:700; }
       .desc{ color:#6b7280; font-size:.9rem; margin:.15rem 0 .5rem; }
-
+      
       /* Cart */
       .cart-icon{ position:relative; display:flex; align-items:center; justify-content:center; cursor:pointer; font-size:20px; padding:.25rem .5rem; }
       .cart-count{ position:absolute; top:-8px; right:-8px; background:var(--liyed-red); color:#fff; width:18px; height:18px; border-radius:50%; display:flex; align-items:center; justify-content:center; font-size:.7rem; font-weight:700; }
       .hidden{ display:none !important; }
-
+      
       /* Cart Sidebar */
       .cart-sidebar{ position:fixed; top:0; right:0; width:400px; height:100vh; background:var(--bg); box-shadow: -4px 0 12px rgba(0,0,0,.15); z-index:1001; transform:translateX(100%); transition: transform .3s ease; overflow-y:auto; }
       .cart-sidebar.open{ transform:translateX(0); }
@@ -152,7 +152,7 @@
       .cart-buttons{ display:flex; flex-direction:column; gap:.5rem; }
       .btn-checkout{ background:var(--liyed-red); color:#fff; padding:.75rem; border:none; font-weight:600; cursor:pointer; }
       .btn-continue{ background:#f3f4f6; color:var(--liyed-black); padding:.75rem; border:none; font-weight:600; cursor:pointer; }
-
+      
       /* Checkout Modal */
       .checkout-modal{ position:fixed; inset:0; background:rgba(0,0,0,.8); z-index:1002; display:none; place-items:center; }
       .checkout-modal.open{ display:grid; }
@@ -250,7 +250,7 @@
           <h2 style="margin:0; text-align:center;">Carrito de compras</h2>
           <button class="checkout-close" onclick="closeCheckout()">×</button>
         </div>
-
+        
         <!-- Checkout Steps -->
         <div class="checkout-steps">
           <div class="step active" data-step="cart">
@@ -338,12 +338,12 @@
             <h2 class="section-title">Información y Cuidado</h2>
             <p class="muted">Aprende a cuidar tus camisetas DTF, consejos para aumentar su duración y mantener la calidad de impresión.</p>
           </div>
-
+          
           <div class="center">
             <h3 style="font-size: 1.5rem; font-weight: 700; margin-bottom: 2rem; color: var(--liyed-red);">
               Consejos para el Cuidado de DTF
             </h3>
-
+            
             <div style="max-width: 400px; margin: 0 auto; aspect-ratio: 9/16; border-radius: 12px; overflow: hidden; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
               <iframe
                 src="https://www.youtube.com/embed/Ax31cqek9UY"
@@ -353,7 +353,7 @@
                 allowfullscreen>
               </iframe>
             </div>
-
+            
             <p class="muted mt-4">
               Descubre cómo mantener tus camisetas DTF como nuevas por más tiempo.
             </p>
@@ -536,34 +536,819 @@
             <article class="product" data-category="Camisas">
               <div class="ph">
                 <img src="https://i.pinimg.com/736x/b8/9c/45/b89c45e2f7d3a8b9c1e2f4d5a6b7c8d9.jpg" alt="Camisa Naruto Hokage - Liyed Design" loading="lazy">
-                <img src="https://i.pinimg.com/736x/fd/72/4a/fd724a93e2d0bec0dcfdf479198854ea.jpg" alt="Camiseta Vintage Naruto- Liyed Design" loading="lazy">
                 <div class="product-overlay">
                   <button class="cart-btn" onclick="addToCart('Camisa Naruto Hokage', 85000, 'https://i.pinimg.com/736x/b8/9c/45/b89c45e2f7d3a8b9c1e2f4d5a6b7c8d9.jpg')">🛒 Añadir al carrito</button>
-                  <button class="cart-btn" onclick="addToCart('Camisa Naruto Hokage', 85000, 'https://i.pinimg.com/736x/fd/72/4a/fd724a93e2d0bec0dcfdf479198854ea.jpg')">🛒 Añadir al carrito</button>
                 </div>
               </div>
               <div class="mt-4">
                 <h3 class="mb-1">Camisa Naruto Hokage</h3>
-                <h3 class="mb-1">Camiseta Vintage Naruto</h3>
                 <p class="desc">Camisa premium - 240gr - 100% algodón</p>
                 <p class="price">$85.000 COP</p>
               </div>
-@@ -1341,150 +1341,150 @@
+            </article>
+
+            <!-- Product 6 - Duplicated -->
+            <article class="product" data-category="Buzos">
+              <div class="ph">
+                <img src="https://i.pinimg.com/736x/e3/d6/44/e3d644d655a37692d07e7e2d38d1ff80.jpg" " alt="Buzo Dragon Ball Z - Liyed Design" loading="lazy">
+                <div class="product-overlay">
+                  <button class="cart-btn" onclick="addToCart('Buzo Dragon Ball Z', 125000, 'tps://i.pinimg.com/736x/e3/d6/44/e3d644d655a37692d07e7e2d38d1ff80.jpg" ')">🛒 Añadir al carrito</button>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="mb-1">Buzo Dragon Ball Z</h3>
+                <p class="desc">Buzo premium - 320gr - 100% algodón</p>
+                <p class="price">$150.000 COP</p>
+              </div>
+            </article>
+
+            <!-- Product 7 - Duplicated -->
+            <article class="product" data-category="Camisas">
+              <div class="ph">
+                <img src="https://i.pinimg.com/736x/c5/2e/8d/c52e8d115869bf75504864acc144cd87.jpg" alt="Camisa Attack on Titan Levi Shingeki No Kyojin Anime AOT - Liyed Design" loading="lazy">
+                <div class="product-overlay">
+                  <button class="cart-btn" onclick="addToCart('Camisa Attack on Titan', 78000, 'https://i.pinimg.com/736x/c5/2e/8d/c52e8d115869bf75504864acc144cd87.jpg')">🛒 Añadir al carrito</button>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="mb-1">Camisa Attack on Titan Levi Shingeki No Kyojin Anime AOT</h3>
+                <p class="desc">Camisa estándar - 220gr - 100% algodón</p>
+                <p class="price">$65.000 COP</p>
+              </div>
+            </article>
+
+            <!-- Product 8 - Duplicated -->
+            <article class="product" data-category="Camisas">
+              <div class="ph">
+                <img src="https://i.pinimg.com/736x/c8/b0/aa/c8b0aaae394615e8befa2b3854b0e7c9.jpg" alt="Attack on Titan Mikasa Shingeki No Kyojin Anime AOT - Liyed Design" loading="lazy">
+                <div class="product-overlay">
+                  <button class="cart-btn" onclick="addToCart('Camisa Attack on Titan', 78000, 'https://i.pinimg.com/736x/c8/b0/aa/c8b0aaae394615e8befa2b3854b0e7c9.jpg')">🛒 Añadir al carrito</button>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="mb-1">Camisa Attack on Titan Mikasa Shingeki No Kyojin Anime AOT</h3>
+                <p class="desc">Camisa estándar - 220gr - 100% algodón</p>
+                <p class="price">$65.000 COP</p>
+              </div>
+            </article>
+            <!-- Product 9 - Duplicated -->
+            <article class="product" data-category="Buzos">
+              <div class="ph">
+                <img src="https://i.pinimg.com/736x/3f/95/83/3f95838d88b3845e9f80568a2d42e71b.jpg" alt="Sudaderas con capucha de Pokémon Anime Gengar  - Liyed Design" loading="lazy">
+                <div class="product-overlay">
+                  <button class="cart-btn" onclick="addToCart('Buzo Pokémon Vintage', 118000, 'https://i.pinimg.com/736x/3f/95/83/3f95838d88b3845e9f80568a2d42e71b.jpg')">🛒 Añadir al carrito</button>
+                </div>
+              </div>
+              <div class="mt-4">
+                <h3 class="mb-1">Buzo Pokémon Vintage</h3>
+                <p class="desc">Buzo retro - 300gr - 100% algodón</p>
+                <p class="price">$118.000 COP</p>
+              </div>
+            </article>
+          </div>
+
+          <div class="center mt-12">
+            <button class="btn" style="background:var(--liyed-black); color:#fff;" onclick="showMoreProducts()">Ver todos los productos</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section contact">
+        <div class="container">
+          <div class="contact-grid">
+            <div>
+              <h2 class="section-title" style="color:#fff;">Contacto</h2>
+              <p class="mb-8" style="color:#d1d5db;">Estamos aquí para ayudarte. No dudes en contactarnos para cualquier consulta, colaboración o información sobre nuestros productos.</p>
+
+              <div class="mb-6">
+                <div class="mb-4">
+                  <strong class="mb-1" style="display:block;">Email</strong>
+                  <p style="color:#d1d5db;">liyedesign1@gmail.com</p>
+                </div>
+                <div>
+                  <strong class="mb-1" style="display:block;">Teléfono</strong>
+                  <p style="color:#d1d5db;">+57 305 236 6735</p>
+                </div>
+              </div>
+
+              <div>
+                <strong class="mb-2" style="display:block;">Síguenos</strong>
+                <div style="display:flex; gap:.75rem;">
+                  <a href="#" style="width:40px;height:40px;border:1px solid #4b5563;border-radius:999px;display:grid;place-items:center;color:#fff;">IG</a>
+                  <a href="#" style="width:40px;height:40px;border:1px solid #4b5563;border-radius:999px;display:grid;place-items:center;color:#fff;">FB</a>
+                  <a href="#" style="width:40px;height:40px;border:1px solid #4b5563;border-radius:999px;display:grid;place-items:center;color:#fff;">TW</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel">
+              <h3 style="font-weight:800; font-size:1.5rem; margin:0 0 1rem;">Envíanos un mensaje</h3>
+              <form id="contactForm" onsubmit="submitForm(event)">
+                <div class="row">
+                  <input class="field" type="text" id="nombre" placeholder="Nombre" aria-label="Nombre" required />
+                  <input class="field" type="email" id="email" placeholder="Email" aria-label="Email" required />
+                </div>
+                <input class="field mt-4" type="text" id="asunto" placeholder="Asunto" aria-label="Asunto" required />
+                <textarea class="field mt-4" id="mensaje" placeholder="Mensaje" aria-label="Mensaje" rows="6" required></textarea>
+                <button class="submit mt-4" type="submit">Enviar mensaje</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <a href="#home" class="brand-name" aria-label="Liyed Design - Inicio">LIYED<span class="accent">DESIGN</span></a>
+            <p class="mt-4" style="font-size:.95rem;">Moda contemporánea que fusiona elegancia y autenticidad para quienes buscan destacar con prendas únicas.</p>
+          </div>
+          <div>
+            <h3 style="color:#fff; font-weight:800;">Enlaces</h3>
+            <ul class="footer-list mt-4">
+              <li><a href="#home">Inicio</a></li>
+              <li><a href="#about">Sobre la marca</a></li>
+              <li><a href="#collections">Colecciones</a></li>
+              <li><a href="#shop">Tienda</a></li>
+              <li><a href="#contact">Contacto</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="color:#fff; font-weight:800;">Ayuda</h3>
+            <ul class="footer-list mt-4">
+              <li><a href="#">FAQ</a></li>
+              <li><a href="#">Envíos y devoluciones</a></li>
+              <li><a href="#">Métodos de pago</a></li>
+              <li><a href="#">Políticas de privacidad</a></li>
+              <li><a href="#">Términos y condiciones</a></li>
+            </ul>
+          </div>
+          <div>
+            <h3 style="color:#fff; font-weight:800;">Newsletter</h3>
+            <p class="mt-2" style="font-size:.95rem;">Suscríbete para recibir las últimas novedades y ofertas especiales.</p>
+            <form class="footer-input mt-4">
+              <input type="email" placeholder="Tu email" aria-label="Tu email" />
+              <button type="submit">OK</button>
+            </form>
+          </div>
+        </div>
+        <div class="copy">© 2025 Liyed Design. Todos los derechos reservados.</div>
+      </div>
+    </footer>
+
+    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
+    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+    
+    <script>
+      // Cart functionality
+      let cart = [];
+      let currentStep = 'cart';
+      
+      function addToCart(productName, price, image) {
+        const existingItem = cart.find(item => item.name === productName);
+        if (existingItem) {
+          existingItem.quantity += 1;
+        } else {
+          cart.push({ name: productName, price: price, quantity: 1, image: image });
+        }
+        updateCartCount();
+        updateCartSidebar();
+        showCartSidebar();
+        showToast('Producto añadido al carrito');
+      }
+      
+      function updateCartCount() {
+        const cartCount = document.getElementById('cartCount');
+        const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+        if (totalItems > 0) {
+          cartCount.textContent = totalItems;
+          cartCount.classList.remove('hidden');
+        } else {
+          cartCount.classList.add('hidden');
+        }
+      }
+      
+      function toggleCart() {
+        if (cart.length === 0) {
+          showToast('El carrito está vacío');
+          return;
+        }
+        showCartSidebar();
+      }
+
+      function showCartSidebar() {
+        updateCartSidebar();
+        document.getElementById('cartSidebar').classList.add('open');
+      }
+
+      function closeCart() {
+        document.getElementById('cartSidebar').classList.remove('open');
+      }
+
+      function updateCartSidebar() {
+        const cartItems = document.getElementById('cartItems');
+        const cartTotal = document.getElementById('cartTotal');
+        
+        if (cart.length === 0) {
+          cartItems.innerHTML = '<p style="text-align:center; color:#6b7280; padding:2rem;">El carrito está vacío</p>';
+          cartTotal.textContent = 'Subtotal: $0 COP';
+          return;
+        }
+
+        let total = 0;
+        cartItems.innerHTML = cart.map(item => {
+          total += item.price * item.quantity;
+          return `
+            <div class="cart-item">
+              <img src="${item.image || 'https://i.pinimg.com/736x/ef/a3/23/efa3232c7e9c5d7c95a1f8d3948f075d.jpg'}" alt="${item.name}">
+              <div class="cart-item-info">
+                <div class="cart-item-name">${item.name}</div>
+                <div class="cart-item-price">$${item.price.toLocaleString('es-CO')} COP</div>
+                <div class="quantity-controls">
+                  <button class="qty-btn" onclick="updateQuantity('${item.name}', -1)">-</button>
+                  <input class="quantity" type="text" value="${item.quantity}" readonly>
+                  <button class="qty-btn" onclick="updateQuantity('${item.name}', 1)">+</button>
+                </div>
+              </div>
+            </div>
+          `;
+        }).join('');
+
+        cartTotal.textContent = `Subtotal: $${total.toLocaleString('es-CO')} COP`;
+      }
+
+      function updateQuantity(productName, change) {
+        const item = cart.find(item => item.name === productName);
+        if (item) {
+          item.quantity += change;
+          if (item.quantity <= 0) {
+            cart = cart.filter(item => item.name !== productName);
+          }
+          updateCartCount();
+          updateCartSidebar();
+        }
+      }
+
+      function startCheckout() {
+        closeCart();
+        currentStep = 'cart';
+        updateCheckoutStep();
+        document.getElementById('checkoutModal').classList.add('open');
+      }
+
+      function closeCheckout() {
+        document.getElementById('checkoutModal').classList.remove('open');
+      }
+
+      function updateCheckoutStep() {
+        const steps = document.querySelectorAll('.step');
+        const form = document.getElementById('checkoutForm');
+        
+        // Update step indicators
+        steps.forEach(step => {
+          step.classList.remove('active', 'completed');
+          if (step.dataset.step === currentStep) {
+            step.classList.add('active');
+          }
+        });
+
+        // Update form content based on current step
+        switch (currentStep) {
+          case 'cart':
+            form.innerHTML = getCartStepContent();
+            break;
+          case 'email':
+            form.innerHTML = getEmailStepContent();
+            break;
+          case 'data':
+            form.innerHTML = getDataStepContent();
+            break;
+          case 'shipping':
+            form.innerHTML = getShippingStepContent();
+            break;
+        }
+      }
+
+      function getCartStepContent() {
+        let total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        let cartHtml = cart.map(item => `
+          <div style="display:flex; justify-content:space-between; padding:.5rem 0; border-bottom:1px solid #e5e7eb;">
+            <div>
+              <div style="font-weight:600;">${item.name}</div>
+              <div style="color:#6b7280;">Cantidad: ${item.quantity}</div>
+            </div>
+            <div style="font-weight:600; color:var(--liyed-red);">$${(item.price * item.quantity).toLocaleString('es-CO')} COP</div>
+          </div>
+        `).join('');
+
+        return `
+          <h3>Tu pedido</h3>
+          <div style="margin:1rem 0;">
+            ${cartHtml}
+            <div class="delivery-info">
+              <strong>📦 Pedidos bajo demanda</strong><br>
+              Tu pedido estará listo en <strong>7 días hábiles</strong>. El envío se realizará el día 7 directamente a tu domicilio.
+            </div>
+            <div style="display:flex; justify-content:space-between; font-size:1.1rem; font-weight:700; padding-top:1rem; border-top:2px solid #e5e7eb;">
+              <span>Total:</span>
+              <span style="color:var(--liyed-red);">$${total.toLocaleString('es-CO')} COP</span>
+            </div>
+          </div>
+          <button class="btn-next" onclick="nextStep()">Continuar/ Total: $${total.toLocaleString('es-CO')}</button>
+        `;
+      }
+
+      function getEmailStepContent() {
+        return `
+          <h3>Inicia tu proceso de compra</h3>
+          <p style="color:#6b7280; margin-bottom:1.5rem;">Guardamos tu correo de forma segura para recordar tus preferencias e informarte de tus pedidos.</p>
+          <div class="form-group">
+            <label class="form-label">Ingresa tu correo electrónico</label>
+            <input class="form-input" type="email" id="userEmail" placeholder="correo@email.com" required>
+          </div>
+          <button class="btn-next" onclick="nextStep()">Confirmar</button>
+        `;
+      }
+
+      function getDataStepContent() {
+        return `
+          <h3>Ingresa tus datos</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">*Correo electrónico</label>
+              <input class="form-input" type="email" id="email" value="${document.getElementById('userEmail')?.value || ''}" readonly>
+            </div>
+            <div class="form-group">
+              <label class="form-label">*Nombre</label>
+              <input class="form-input" type="text" id="firstName" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">*Apellido</label>
+              <input class="form-input" type="text" id="lastName" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">*Tipo de documento</label>
+              <select class="form-input" id="docType" required>
+                <option value="">Cédula ciudadana...</option>
+                <option value="cc">Cédula de ciudadanía</option>
+                <option value="ce">Cédula de extranjería</option>
+                <option value="passport">Pasaporte</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">*Número</label>
+              <input class="form-input" type="text" id="docNumber" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label">*Celular</label>
+              <input class="form-input" type="tel" id="phone" required>
+            </div>
+          </div>
+          <div style="margin:1rem 0;">
+            <label style="display:flex; align-items:center; gap:.5rem;">
+              <input type="checkbox" required>
+              <span style="font-size:.9rem;">*Acepto términos y condiciones, términos y condiciones marketplace</span>
+            </label>
+            <label style="display:flex; align-items:center; gap:.5rem; margin-top:.5rem;">
+              <input type="checkbox" required>
+              <span style="font-size:.9rem;">*Autorizo tratamiento de mis datos personales</span>
+            </label>
+            <label style="display:flex; align-items:center; gap:.5rem; margin-top:.5rem;">
+              <input type="checkbox">
+              <span style="font-size:.9rem;">Autorizo el tratamiento de mis datos para el envío de publicidad</span>
+            </label>
+          </div>
+          <div style="display:flex; gap:.5rem;">
+            <button class="btn-back" onclick="prevStep()">Volver al carrito</button>
+            <button class="btn-next" style="flex:1;" onclick="nextStep()">Continuar/ Total: $${cart.reduce((sum, item) => sum + (item.price * item.quantity), 0).toLocaleString('es-CO')} COP</button>
+          </div>
+        `;
+      }
+
+      function getShippingStepContent() {
+        return `
+          <h3>Opciones de entrega</h3>
+          <div style="display:flex; gap:1rem; margin:1rem 0;">
+            <div style="flex:1; padding:1rem; border:2px solid var(--liyed-red); border-radius:8px;">
+              <div style="display:flex; align-items:center; gap:.5rem; margin-bottom:.5rem;">
+                <span style="font-size:1.5rem;">🚚</span>
+                <strong>Envío a domicilio</strong>
+              </div>
+              <p style="color:#6b7280; margin:0; font-size:.9rem;">Entrega en 7 días hábiles</p>
+            </div>
+          </div>
+          
+          <div class="working-notice">
+            <strong>¡Estamos trabajando en tu pedido!</strong><br>
+            <span style="color:#856404;">Los pedidos se hacen bajo demanda - Tu pedido estará listo en 7 días hábiles y ese día se enviará a domicilio.</span>
+          </div>
+          
+          <div class="search-input" style="margin-bottom:1rem;">
+            <input class="form-input" type="text" placeholder="🔍 Buscar dirección..." style="padding-left:40px;">
+            <span class="search-icon">🔍</span>
+          </div>
+          
+          <div class="form-group">
+            <label class="form-label">*Departamento</label>
+            <select class="form-input" id="department" onchange="updateCities()" required>
+              <option value="">Seleccione una opción</option>
+              <option value="amazonas">Amazonas</option>
+              <option value="antioquia">Antioquia</option>
+              <option value="arauca">Arauca</option>
+              <option value="atlantico">Atlántico</option>
+              <option value="bolivar">Bolívar</option>
+              <option value="boyaca">Boyacá</option>
+              <option value="caldas">Caldas</option>
+              <option value="caqueta">Caquetá</option>
+              <option value="casanare">Casanare</option>
+              <option value="cauca">Cauca</option>
+              <option value="cesar">Cesar</option>
+              <option value="choco">Chocó</option>
+              <option value="cordoba">Córdoba</option>
+              <option value="cundinamarca">Cundinamarca</option>
+              <option value="guainia">Guainía</option>
+              <option value="guaviare">Guaviare</option>
+              <option value="huila">Huila</option>
+              <option value="laguajira">La Guajira</option>
+              <option value="magdalena">Magdalena</option>
+              <option value="meta">Meta</option>
+              <option value="narino">Nariño</option>
+              <option value="nortesantander">Norte de Santander</option>
+              <option value="putumayo">Putumayo</option>
+              <option value="quindio">Quindío</option>
+              <option value="risaralda">Risaralda</option>
+              <option value="sanandres">San Andrés y Providencia</option>
+              <option value="santander">Santander</option>
+              <option value="sucre">Sucre</option>
+              <option value="tolima">Tolima</option>
+              <option value="valle">Valle del Cauca</option>
+              <option value="vaupes">Vaupés</option>
+              <option value="vichada">Vichada</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label class="form-label">*Municipio o ciudad capital</label>
+            <select class="form-input" id="city" required>
+              <option value="">Seleccione una opción</option>
+            </select>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">*Tipo de dirección</label>
+              <select class="form-input" id="addressType" required>
+                <option value="">Seleccionar</option>
+                <option value="autopista">Autopista</option>
+                <option value="avcarrera">Av. Carrera</option>
+                <option value="avdiagonal">Av. Diagonal</option>
+                <option value="avtransversal">Av. Transversal</option>
+                <option value="avenidacalle">Avenida Calle</option>
+                <option value="calle">Calle</option>
+                <option value="carrera">Carrera</option>
+                <option value="circular">Circular</option>
+                <option value="circunvalar">Circunvalar</option>
+                <option value="diagonal">Diagonal</option>
+                <option value="manzana">Manzana</option>
+                <option value="otro">Otro</option>
+                <option value="transversal">Transversal</option>
+                <option value="via">Vía</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label class="form-label">*Calle</label>
+              <input class="form-input" type="text" id="street" placeholder="Ej: 18" required>
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label">*Número</label>
+              <input class="form-input" type="text" id="number1" placeholder="1222" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label"></label>
+              <input class="form-input" type="text" id="number2" placeholder="12">
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="form-label">*Barrio</label>
+            <input class="form-input" type="text" id="neighborhood" placeholder="Ej: Los Colores" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label">Piso/Apartamento/Torre/Edificio</label>
+            <input class="form-input" type="text" id="apartment" placeholder="hhh">
+          </div>
+          <div class="form-group">
+            <label class="form-label">*Nombre de la persona que recibe</label>
+            <input class="form-input" type="text" id="receiverName" placeholder="aaa" required>
+          </div>
+          
+          <div class="address-summary">
+            <h4 style="margin:0 0 .5rem 0;">Resumen</h4>
+            <p id="addressPreview" style="margin:0; color:#6b7280; font-size:.9rem;">La dirección aparecerá aquí conforme completes los campos</p>
+          </div>
+          
+          <div style="display:flex; gap:.5rem;">
+            <button class="btn-back" onclick="prevStep()">Volver</button>
+            <button class="btn-next" style="flex:1;" onclick="nextStep()">Continuar</button>
+          </div>
+        `;
+      }
+
+      function getPaymentStepContent() {
+        return `
+          <div style="text-align:center; margin-bottom:1.5rem;">
+            <img src="/lovable-uploads/32883a67-2179-4fe9-8c39-b053c2d68329.png" alt="Liyed Design" style="height:40px; margin:0 auto;">
+          </div>
+          
+          <h3>Método de pago</h3>
+          
+          <div class="payment-methods">
+            <div class="payment-option selected" onclick="selectPayment(this, 'transfer')">
+              <div style="display:flex; align-items:center; gap:.75rem;">
+                <span style="font-size:1.5rem;">🏦</span>
+                <div>
+                  <strong>Transferencia bancaria</strong>
+                  <p style="margin:.25rem 0 0; color:#6b7280; font-size:.9rem;">Paga directamente desde tu banco</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="payment-option" onclick="selectPayment(this, 'nequi')">
+              <div style="display:flex; align-items:center; gap:.75rem;">
+                <span style="font-size:1.5rem;">📱</span>
+                <div>
+                  <strong>Nequi</strong>
+                  <p style="margin:.25rem 0 0; color:#6b7280; font-size:.9rem;">Pago rápido con Nequi</p>
+                </div>
+              </div>
+            </div>
+            
+            <div class="payment-option" onclick="selectPayment(this, 'daviplata')">
+              <div style="display:flex; align-items:center; gap:.75rem;">
+                <span style="font-size:1.5rem;">💳</span>
+                <div>
+                  <strong>DaviPlata</strong>
+                  <p style="margin:.25rem 0 0; color:#6b7280; font-size:.9rem;">Pago con billetera digital</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="address-summary">
+            <h4 style="margin:0 0 .5rem 0;">Resumen del pedido</h4>
+            <div id="orderSummary">
+              <!-- Order summary will be populated here -->
+            </div>
+          </div>
+          
+          <div style="display:flex; gap:.5rem; margin-top:1.5rem;">
+            <button class="btn-back" onclick="prevStep()">Volver</button>
+            <button class="btn-next" style="flex:1;" onclick="finishOrder()">Realizar pedido</button>
+          </div>
+        `;
+      }
+
+      function updateCities() {
+        const department = document.getElementById('department').value;
+        const citySelect = document.getElementById('city');
+        
+        const cities = {
+          cundinamarca: ['Bogotá D.C.', 'Soacha', 'Girardot', 'Zipaquirá', 'Facatativá', 'Chía', 'Madrid', 'Fusagasugá', 'Cajicá', 'Sibaté'],
+          antioquia: ['Medellín', 'Bello', 'Itagüí', 'Envigado', 'Apartadó', 'Turbo', 'Rionegro', 'Sabaneta', 'Caldas', 'La Estrella'],
+          valle: ['Cali', 'Palmira', 'Buenaventura', 'Tuluá', 'Cartago', 'Buga', 'Jamundí', 'Yumbo', 'Candelaria', 'Florida'],
+          atlantico: ['Barranquilla', 'Soledad', 'Malambo', 'Sabanagrande', 'Puerto Colombia', 'Galapa', 'Baranoa', 'Sabanalarga'],
+          santander: ['Bucaramanga', 'Floridablanca', 'Girón', 'Piedecuesta', 'Barrancabermeja', 'San Gil', 'Socorro', 'Málaga'],
+          bolivar: ['Cartagena', 'Magangué', 'Turbaco', 'Arjona', 'El Carmen de Bolívar', 'Mompós', 'Sincelejo', 'Corozal']
+        };
+        
+        citySelect.innerHTML = '<option value="">Seleccione una opción</option>';
+        
+        if (cities[department]) {
+          cities[department].forEach(city => {
+            const option = document.createElement('option');
+            option.value = city.toLowerCase().replace(/\s+/g, '');
+            option.textContent = city;
+            citySelect.appendChild(option);
+          });
+        }
+        
+        updateAddressPreview();
+      }
+
+      function updateAddressPreview() {
+        const department = document.getElementById('department')?.selectedOptions[0]?.text || '';
+        const city = document.getElementById('city')?.selectedOptions[0]?.text || '';
+        const addressType = document.getElementById('addressType')?.selectedOptions[0]?.text || '';
+        const street = document.getElementById('street')?.value || '';
+        const number1 = document.getElementById('number1')?.value || '';
+        const number2 = document.getElementById('number2')?.value || '';
+        const neighborhood = document.getElementById('neighborhood')?.value || '';
+        const apartment = document.getElementById('apartment')?.value || '';
+        const receiverName = document.getElementById('receiverName')?.value || '';
+        
+        let preview = '';
+        if (addressType && street && number1) {
+          preview = `${addressType} ${street} # ${number1}${number2 ? '-' + number2 : ''}`;
+          if (apartment) preview += ` - ${apartment}`;
+          if (neighborhood) preview += ` - ${neighborhood}`;
+          if (city) preview += ` - ${city}`;
+          if (department) preview += ` - ${department}`;
+          if (receiverName) preview += ` - Recibe: ${receiverName}`;
+        } else {
+          preview = 'La dirección aparecerá aquí conforme completes los campos';
+        }
+        
+        const previewElement = document.getElementById('addressPreview');
+        if (previewElement) previewElement.textContent = preview;
+      }
+
+      function selectPayment(element, method) {
+        document.querySelectorAll('.payment-option').forEach(option => {
+          option.classList.remove('selected');
+        });
+        element.classList.add('selected');
+        
+        // Update order summary
+        const orderSummary = document.getElementById('orderSummary');
+        const total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        
+        orderSummary.innerHTML = `
+          <div style="display:flex; justify-content:space-between; margin-bottom:.5rem;">
+            <span>Subtotal productos:</span>
+            <span>$${total.toLocaleString('es-CO')} COP</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; margin-bottom:.5rem;">
+            <span>Envío:</span>
+            <span>GRATIS</span>
+          </div>
+          <hr style="margin:.75rem 0;">
+          <div style="display:flex; justify-content:space-between; font-weight:700; font-size:1.1rem;">
+            <span>Total:</span>
+            <span style="color:var(--liyed-red);">$${total.toLocaleString('es-CO')} COP</span>
+          </div>
+        `;
+      }
+
+      function nextStep() {
+        switch (currentStep) {
+          case 'cart':
+            currentStep = 'email';
+            break;
+          case 'email':
+            const email = document.getElementById('userEmail').value;
+            if (!email) {
+              showToast('Por favor ingresa tu correo electrónico');
+              return;
+            }
+            currentStep = 'data';
+            break;
+          case 'data':
+            // Validate required fields
+            const requiredFields = ['firstName', 'lastName', 'docType', 'docNumber', 'phone'];
+            for (let field of requiredFields) {
+              if (!document.getElementById(field).value) {
+                showToast('Por favor completa todos los campos requeridos');
+                return;
+              }
+            }
+            currentStep = 'shipping';
+            break;
+          case 'shipping':
+            // Validate shipping fields
+            const shippingFields = ['department', 'city', 'addressType', 'street', 'number1', 'neighborhood', 'receiverName'];
+            for (let field of shippingFields) {
+              if (!document.getElementById(field).value) {
+                showToast('Por favor completa todos los campos requeridos');
+                return;
+              }
+            }
+            currentStep = 'payment';
+            break;
+        }
+        updateCheckoutStep();
+      }
+
+      function prevStep() {
+        switch (currentStep) {
+          case 'email':
+            currentStep = 'cart';
+            break;
+          case 'data':
+            currentStep = 'email';
+            break;
+          case 'shipping':
+            currentStep = 'data';
+            break;
+          case 'payment':
+            currentStep = 'shipping';
+            break;
+        }
+        updateCheckoutStep();
+      }
+
+      function finishOrder() {
+        const requiredFields = ['department', 'city', 'addressType', 'street', 'number1', 'neighborhood', 'receiverName'];
+        for (let field of requiredFields) {
+          if (!document.getElementById(field).value) {
+            showToast('Por favor completa todos los campos requeridos');
+            return;
+          }
+        }
+        
+        showToast('¡Pedido realizado exitosamente! Te contactaremos pronto para confirmar los detalles.');
+        cart = [];
+        updateCartCount();
+        closeCheckout();
+      }
+      
+      // Filter products
+      function filterProducts(category) {
+        const chips = document.querySelectorAll('.chip');
+        const products = document.querySelectorAll('.product');
+        
+        // Update active chip
+        chips.forEach(chip => chip.classList.remove('active'));
+        event.target.classList.add('active');
+        
+        // Show/hide products
+        products.forEach(product => {
+          if (category === 'Todos' || product.dataset.category === category) {
+            product.style.display = 'block';
+          } else {
+            product.style.display = 'none';
+          }
+        });
+      }
+      
+      // Show more categories
+      function showMoreCategories() {
+        // Create additional categories dynamically
+        const grid = document.querySelector('#collections .grid');
+        const newCategories = [
+          {
+            title: 'Deportes & Gaming',
+            desc: 'Combina pasión deportiva y gaming',
+            img: 'https://i.pinimg.com/736x/f1/a2/b3/f1a2b3c4d5e6f7a8b9c0d1e2f3a4b5c6.jpg',
+            url: '/categorias/deportes-gaming'
+          },
+          {
+            title: 'Música & Bandas',
+            desc: 'Iconos musicales que inspiran',
+            img: 'https://i.pinimg.com/736x/d2/e3/f4/d2e3f4a5b6c7d8e9f0a1b2c3d4e5f6a7.jpg',
+            url: '/categorias/musica'
+          },
+          {
+            title: 'Naturaleza & Aventura',
+            desc: 'Para espíritus aventureros',
+            img: 'https://i.pinimg.com/736x/a8/b9/c0/a8b9c0d1e2f3a4b5c6d7e8f9a0b1c2d3.jpg',
+            url: '/categorias/naturaleza'
+          }
+        ];
+        
+        newCategories.forEach(cat => {
+          const article = document.createElement('article');
+          article.className = 'card';
+          article.innerHTML = `
+            <div class="ratio">
+              <img src="${cat.img}" alt="${cat.title} - Liyed Design" loading="lazy" />
+            </div>
+            <div class="card-overlay">
+              <div>
+                <h4>${cat.title}</h4>
+                <p>${cat.desc}</p>
+                <a class="btn btn-primary btn-sm" href="${cat.url}" target="_blank" rel="noopener">Ver más</a>
+              </div>
+            </div>
+          `;
+          grid.appendChild(article);
+        });
+        
+        event.target.style.display = 'none';
+        showToast('Nuevas categorías añadidas');
+      }
+      
+      // Show more products
+      function showMoreProducts() {
+        const grid = document.getElementById('productsGrid');
+        const newProducts = [
+          {
             name: 'Camisa Demon Slayer',
             category: 'Camisas',
             price: 82000,
             img: 'https://i.pinimg.com/736x/b4/c5/d6/b4c5d6e7f8a9b0c1d2e3f4a5b6c7d8e9.jpg',
             desc: 'Camisa especial - 235gr - 100% algodón'
-            img: 'https://i.pinimg.com/736x/4a/a2/52/4aa252cae03c9048e8d1426c733aca96.jpg',
-            desc: 'Camisa beige - 235gr - 100% algodón'
           },
           {
             name: 'Buzo Rick and Morty',
-            name: 'Buzo Sonic con capucha'
             category: 'Buzos',
             price: 115000,
             img: 'https://i.pinimg.com/736x/c8/d9/e0/c8d9e0f1a2b3c4d5e6f7a8b9c0d1e2f3.jpg',
-            img: 'https://i.pinimg.com/736x/25/a6/2e/25a62ed1b69da89163cb6a30d3c66454.jpg',
             desc: 'Buzo divertido - 310gr - 100% algodón'
           },
           {
@@ -581,7 +1366,7 @@
             desc: 'Camisa Sonic - 325gr - 100% algodón - Acid Wash'
           }
         ];
-
+        
         newProducts.forEach(product => {
           const article = document.createElement('article');
           article.className = 'product';
@@ -601,27 +1386,27 @@
           `;
           grid.appendChild(article);
         });
-
+        
         event.target.style.display = 'none';
         showToast('Nuevos productos añadidos');
       }
-
+      
       // Contact form submission
       function submitForm(event) {
         event.preventDefault();
-
+        
         const nombre = document.getElementById('nombre').value;
         const email = document.getElementById('email').value;
         const asunto = document.getElementById('asunto').value;
         const mensaje = document.getElementById('mensaje').value;
-
+        
         // Simulate form submission
         showToast('Mensaje enviado exitosamente. Te contactaremos pronto.');
-
+        
         // Reset form
         document.getElementById('contactForm').reset();
       }
-
+      
       // Toast notification
       function showToast(message) {
         // Create toast element
@@ -640,15 +1425,15 @@
           transition: transform 0.3s ease;
         `;
         toast.textContent = message;
-
+        
         // Add to page
         document.body.appendChild(toast);
-
+        
         // Animate in
         setTimeout(() => {
           toast.style.transform = 'translateX(0)';
         }, 100);
-
+        
         // Remove after 3 seconds
         setTimeout(() => {
           toast.style.transform = 'translateX(100%)';
@@ -662,7 +1447,7 @@
       function toggleTheme() {
         const body = document.body;
         const button = document.querySelector('.theme-toggle');
-
+        
         if (body.getAttribute('data-theme') === 'dark') {
           body.removeAttribute('data-theme');
           button.textContent = '🌙';
@@ -683,7 +1468,7 @@
       // Update addToCart function to use correct images
       function addToCart(name, price, image) {
         const correctImage = productImages[name] || image || 'https://via.placeholder.com/60';
-
+        
         const existingItem = cart.find(item => item.name === name);
         if (existingItem) {
           existingItem.quantity += 1;
@@ -695,7 +1480,7 @@
             image: correctImage
           });
         }
-
+        
         updateCartCount();
         updateCartItems();
         showToast(`${name} añadido al carrito`);
